@@ -1,0 +1,32 @@
+h1{
+  color:blue;
+  font-size: 99px;
+  text-decoration: underline;
+}
+p{
+  font-family: verdana;
+  font-size:18px;
+  line-height: 1.5;
+  text-align: left;
+  text-indent: 36px;
+  text-decoration: underline;
+}
+.style1{
+  color:blue;
+}
+
+.style2{
+  color: pink;
+}
+
+a{
+  font-size:99px;
+}
+a:hover{
+  color: gray;
+  border-bottom:10px solid #000;
+}
+a:hover{
+    color:gray;
+    border-bottom: 100px solid red;
+}
