@@ -1,0 +1,28 @@
+.wrap{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.header{
+    height:50px;
+    background-color: red;
+}
+.menu{
+    background:black;
+    width: 200px;
+    height: 50px;
+    float: left;
+}
+.content{
+    background: pink;
+    width: 800px;
+    height: 50px;
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
+.footer{
+    background: gray;
+    height: 50px;
+}
