@@ -1,0 +1,52 @@
+h1{
+    color: blue;
+    font-size: 99px;
+    text-decoration: underline;
+    border: 10px dotted red ;/*線條*/
+}
+img{
+    border-bottom: 5px solid #000000;/*單一線條*/
+    border-right: 5px solid orange;/*單一線條*/
+    border-left: 5px solid orange;
+    border-top: 5px solid #000000;
+}
+
+/* p{
+    color:red;
+} */
+/* 
+選擇器{
+    屬性:設定值;
+} */
+.style1{
+    color:blue;
+}
+
+.style2{
+    color:pink;
+}
+
+.stlye3{
+    color:chartreuse;
+}
+
+.style4{
+    font-family: Arial;/*字體*/
+    font-size:18px;
+    line-height: 1.5;/*行距*/
+    text-align: right;/*靠右*/
+    text-indent: 36px;/*首行縮排兩個字*/
+    text-decoration: underline /*下底線*/
+}
+
+a{
+    font-size:100px;
+    /* border-bottom: 50px solid; */
+}
+a:hover{      /*hover是滑鼠滑過去的效果*/
+    color:gray;
+    /* border-bottom:100px solid */
+}
+a:active{    /*active是滑鼠點下去的效果*/
+    color:yellow;
+}

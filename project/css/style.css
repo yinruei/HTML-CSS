@@ -21,6 +21,13 @@ a{
   font-size:16px;
   color: red;
 }
+.style1{
+  text-decoration: line-through;;
+}
+
 img{
+  border:solid gray;
+}
+img:hover{
   border:solid pink;
 }
