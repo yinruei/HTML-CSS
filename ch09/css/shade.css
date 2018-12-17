@@ -48,19 +48,9 @@ table {
 }
 
 .box{
-    width:150px;
-    height:150px;
-    background: #000;
-    line-height: 150px;
-    /* border-radius: 50px 30px 20px 10px; */
-    border-radius: 50% 30% 20% 10%;
-    border:10px solid red;
-    text-align:center;
-    color:#fff;
-    font-size:30px;
-}
-.box2{
-    width: 1002px;
-    height: 500px;
-    background: -webkit-linear-gradient(left, red, yellow);
+    height:200px;
+    width:200px;
+    background:green;
+    box-shadow: 5px 5px 15px grey;
+    margin: 30px;
 }
