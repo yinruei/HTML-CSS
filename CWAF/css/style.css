@@ -66,6 +66,7 @@ table {
 .container {
 	width: 80%;
 	max-width: 1000px;
+	/* margin: 0 auto; */
 	margin: 0 auto;
 }
 
@@ -110,7 +111,8 @@ header .logo {
 .topheader a{
 	color: #ffffff;
 	text-decoration: none;
-	font-size: 16pt;
+	font-size: 16px;
+	letter-spacing: 0.64px; /* 沒反應*/
 }
 
 .banner{
@@ -128,16 +130,15 @@ h1{
 	/* margin-left: 100px; */
 	margin-right: 100px;
 	text-align:left;
-	font-size: 48pt;
+	font-size: 48px;
 	color: #ffffff;
 	font-weight: bold;
 	font-family: sans-serif;
 }
 
 h4{
-
 	color: #ffffff;
-	font-size: 18pt;
+	font-size: 18px;
 	letter-spacing:0.9;
 }
 
@@ -177,6 +178,16 @@ h4{
 	font-weight: 700;
 }
 
+.content .container h2{
+	text-align: center;
+	margin-top: -100px;
+	letter-spacing: 1.8px;
+	color: rgb(0,60,84);
+	font-size: 36px;
+	font-family: sans-serif;/* 字型之後要改 */
+	font-weight: bold;
+
+}
 .content-section span {
 	display: block;
 }
