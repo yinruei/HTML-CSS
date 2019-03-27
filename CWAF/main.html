@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>天氣分析研討會</title>
-    {% load staticfiles %}
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href=css/style.css>
 </head>
 <body>
     <div class="wrap">
         <header class="header">
             <div class="container">
                 <a href="#" class="logo">
-                    <img src="{% static "img/cwb_logo.png" %}" alt="" class="img-fulid">
+                    <img src=img/cwb_logo.png alt="" class="img-fulid">
                 </a>
                 <ul class="topheader">
                     <li><a href="#">網站導覽</a></li>
@@ -48,21 +47,59 @@
 
         <div class="content">
             <div class="container">
-                <h2>研討會資訊</h2>
+                <h2 class="title">研討會資訊</h2>
                 <div class="row" id="row1">
-                    <div class="content-section">
-                        <h3>日期</h3>
-                        <span>民國107年9月11-13日</span>
+                    <div class="col-4 section">
+                        <div>
+                            <div class="content-section">
+                                <h3>日期</h3>
+                                <span>民國107年9月11-13日</span>
+                            </div>
+                            <div class="content-section">
+                                <h3>地點</h3>
+                                <span>交通部中央氣象局</span>
+                                <!-- <img src="{% static "img/position.png" %}" alt=""> -->
+                                <a href="#" class="position">台北市中正區公園路64號</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-section">
-                        <h3>地點</h3>
-                        <span>交通部中央氣象局</span>
-                        <!-- <img src="{% static "img/position.png" %}" alt=""> -->
-                        <a href="#" class="position">台北市中正區公園路64號</a>
+                    <div class="col-4 section">
+                        <div>
+                            <div class="content-section">
+                                <h3>本屆議題</h3>
+                                <span>
+                                    <ul>
+                                        <li>-環境遙測</li>
+                                        <li>-大氣監測與分析</li>
+                                        <li>-天氣模擬與預報</li>
+                                        <li>-氣候監測與預報</li>
+                                        <li>-氣象防災與氣候調適應用</li>
+                                        <li>-氣象跨域應用與環境永續發展</li>
+                                        <li>-海象測報與應用</li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 section">
+                        <div>
+                            <div class="content-section">
+                                <h3>主辦單位</h3>
+                                <span>交通部中央氣象局</span>
+                                <!-- <div>交通部中央氣象局</div> -->
+                            </div>
+                            <div class="content-section">
+                                <h3>協辦單位</h3>
+                                <span>
+                                    中華民國氣象學會<br>
+                                    國家災害防救科技中心
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row" id="row2">
-                    <div class="content-section">
+                <!-- <div class="row" id="row2">
+                    <div class="col-4">
                         <h3>本屆議題</h3>
                         <span>
                             <ul>
@@ -78,20 +115,21 @@
                     </div>
                 </div>
                 <div class="row" id="row3">
-                    <div class="content-section">
-                        <h3>主辦單位</h3>
-                        <span>交通部中央氣象局</span>
-                    </div>
-                    <div class="content-section">
-                        <h3>協辦單位</h3>
-                        <span>
-                            中華民國氣象學會<br>
-                            國家災害防救科技中心
-                        </span>
+                    <div class="col-4">
+                        <div class="content-section">
+                            <h3>主辦單位</h3>
+                            <span>交通部中央氣象局</span>
+                        </div>
+                        <div class="content-section">
+                            <h3>協辦單位</h3>
+                            <span>
+                                中華民國氣象學會<br>
+                                國家災害防救科技中心
+                            </span>
+                        </div>
                     </div>
                 </div>
-
-                <img src="" alt="">
+                <img src="" alt=""> -->
             </div>
         </div>
 
@@ -107,7 +145,7 @@
 
 
         <div class="footer">
-            <div class="container">
+            <div class="container clearfix">
                 <ul class="organizer">
                     <span>主辦單位</span>
                     <!-- <li>地址:10048臺北市中正區公園路64號 科技中心</li>

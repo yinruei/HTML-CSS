@@ -48,9 +48,9 @@ table {
 }
 
 /*  */
-/* * {
+* {
 	box-sizing: border-box;
-} */
+}
 .wrap{
 	/* margin: 0 auto; */
 	position: relative;
@@ -64,9 +64,9 @@ table {
 } */
 
 .container {
-	width: 80%;
+	/* width: 80%; */
 	max-width: 1000px;
-	/* margin: 0 auto; */
+	/* margin: 0 auto;*/
 	margin: 0 auto;
 }
 
@@ -180,7 +180,7 @@ h4{
 
 .content .container h2{
 	text-align: center;
-	margin-top: -50px;/* 要距離menu 100px*/
+	/* margin-top: -50px;要距離menu 100px */
 	letter-spacing: 1.8px;
 	color: rgb(0,60,84);
 	font-size: 36px;
@@ -189,32 +189,67 @@ h4{
 	/* border-bottom: 50px solid rgb(153, 51, 0); */
 }
 
-.content .container .row{
-	float: left;
-	column-width: 332px;
+.row{
+	/* float: left;
+	column-width: 332px; */
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #row1{
-	border-left: 1px solid rgb(159, 162, 163);
+	/* border-left: 1px solid rgb(159, 162, 163); */
 }
 
 #row2{
-	border-left: 1px solid rgb(159, 162, 163);
+	/* border-left: 1px solid rgb(159, 162, 163); */
 }
 
 #row3{
-	border-left: 1px solid rgb(159, 162, 163);
-	border-right: 1px solid rgb(159, 162, 163);
+	/* border-left: 1px solid rgb(159, 162, 163);
+	border-right: 1px solid rgb(159, 162, 163); */
 }
 
-.content-section{
+.col-4 {
+	/* padding-left: 20px; */
+	flex: 0 0 33.3333%;
+	max-width: 33.3333%;
+}
+/* .content-section{
 	margin-left: 20px;
+	flex: 0 0 33.3333%;
+	max-width: 33.3333%;
+} */
 
+.content .section {
+	padding: 30px 42px 0 42px;
+	border-right: 1px solid #000;
+}
+.content .section:first-child {
+	border-left: 1px solid #000;
+}
+
+.content .title {
+	position: relative;
+	margin-bottom: 50px;
+	/* padding-bottom: 5px;
+	border-bottom: 2px solid red; */
+}
+.content .title:after {
+	position: absolute;
+	content: '';
+	left: 50%;
+	top: calc(100% + 20px);
+	transform: translateX(-50%);
+	width: 53px;
+	height: 2px;
+	background-color: rgb(153, 51, 0);	
+	/* padding-bottom: 5px;
+	border-bottom: 2px solid red; */
 }
 
 .content-section h3{
 	/* float:left; */
-	padding-top: 30px;
+	/* padding-top: 30px; */
 	color: rgb(77,81,82);
 	letter-spacing: 1.3px;
 	font-size: 26pt;
@@ -231,12 +266,12 @@ h4{
 
 .content-section span {
 	display: block;
-
 	color: rgb(77,81,82);
 	font-size: 20px;
 	letter-spacing: 1.05px;
 	font-family: serif;/*字形之後要改*/
 	margin-top: 20px;
+	margin-bottom: 35px;
 	/* text-align: left; */
 }
 
@@ -267,15 +302,9 @@ h4{
 	Height: 66pt;
  }
 
-
-
-
-
-
-
 .footer{
 	/* display: block; */
-	margin-top: 800px;
+	/* margin-top: 800px; */
 	/* clear: both; */
 }
 
@@ -318,7 +347,7 @@ h4{
 
 .seminar{
 	float: left;
-	margin-right:88px;
+	margin-right:86px;
 
 }
 
