@@ -48,18 +48,18 @@ table {
 }
 
 /*  */
-* {
+/* * {
 	box-sizing: border-box;
-}
+} */
 .wrap{
 	/* margin: 0 auto; */
 	position: relative;
 	width: 100%;
-	background: #ccc;
+	background: rgb(255, 255, 255);
 }
 /* .info{
 	width: 80%;
-  	max-width: 1000px;
+	max-width: 1000px;
 	margin: 0 auto;
 } */
 
@@ -121,7 +121,7 @@ header .logo {
 	height: 500px;
 	position: absolute;
 	top: 0;
-	background: green;
+	background:rgb(0, 0, 139);
 	z-index: 10;
 }
 
@@ -180,14 +180,149 @@ h4{
 
 .content .container h2{
 	text-align: center;
-	margin-top: -100px;
+	margin-top: -50px;/* 要距離menu 100px*/
 	letter-spacing: 1.8px;
 	color: rgb(0,60,84);
 	font-size: 36px;
 	font-family: sans-serif;/* 字型之後要改 */
 	font-weight: bold;
+	/* border-bottom: 50px solid rgb(153, 51, 0); */
+}
+
+.content .container .row{
+	float: left;
+	column-width: 332px;
+}
+
+#row1{
+	border-left: 1px solid rgb(159, 162, 163);
+}
+
+#row2{
+	border-left: 1px solid rgb(159, 162, 163);
+}
+
+#row3{
+	border-left: 1px solid rgb(159, 162, 163);
+	border-right: 1px solid rgb(159, 162, 163);
+}
+
+.content-section{
+	margin-left: 20px;
 
 }
+
+.content-section h3{
+	/* float:left; */
+	padding-top: 30px;
+	color: rgb(77,81,82);
+	letter-spacing: 1.3px;
+	font-size: 26pt;
+	font-weight: bold;
+	font-family:serif;/*字形*/
+}
+
+.content-section .position{
+	/* float:left; */
+	color:rgb(0, 102, 153);
+	font-size:16px;
+	font-family:serif;/*字形*/
+}
+
 .content-section span {
 	display: block;
+
+	color: rgb(77,81,82);
+	font-size: 20px;
+	letter-spacing: 1.05px;
+	font-family: serif;/*字形之後要改*/
+	margin-top: 20px;
+	/* text-align: left; */
 }
+
+
+
+
+
+
+.context h2{
+	text-align: center;
+	margin-top: 800px;
+	letter-spacing: 1.8px;
+	color: rgb(0,60,84);
+	font-size: 36px;
+	font-family: sans-serif;/* 字型之後要改 */
+	font-weight: bold;
+}
+
+
+#send_pwd{
+	font-size: 24px;
+	color: white;
+	border-radius: 15px;
+	background: rgb(0, 102, 153);
+	position:relative;
+	left:50%;
+	width: 281pt;
+	Height: 66pt;
+ }
+
+
+
+
+
+
+
+.footer{
+	/* display: block; */
+	margin-top: 800px;
+	/* clear: both; */
+}
+
+.footer span{
+	display: block;
+	color:rgb(113, 118, 120);
+	letter-spacing: 0.8px;
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+.footer li {
+	display: block;
+	color:rgb(113, 118, 120);
+}
+
+
+
+.footer li a{
+	display: block;
+	color:rgb(113, 118, 120);
+	text-decoration: none;
+	margin-bottom: 12px;
+}
+
+.organizer{
+	float: left;
+	margin-right:120px;
+}
+
+.firstpage{
+	float: left;
+	margin-right:68px;
+}
+
+.submission{
+	float: left;
+	margin-right:46px;
+}
+
+.seminar{
+	float: left;
+	margin-right:88px;
+
+}
+
+.other{
+	float: left;
+}
+

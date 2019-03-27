@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>天氣分析研討會</title>
-    <link rel="stylesheet" href="css/style.css">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <body>
     <div class="wrap">
         <header class="header">
             <div class="container">
                 <a href="#" class="logo">
-                    <img src="img/cwb_logo.png" alt="" class="img-fulid">
+                    <img src="{% static "img/cwb_logo.png" %}" alt="" class="img-fulid">
                 </a>
                 <ul class="topheader">
                     <li><a href="#">網站導覽</a></li>
@@ -48,7 +49,7 @@
         <div class="content">
             <div class="container">
                 <h2>研討會資訊</h2>
-                <div class="row">
+                <div class="row" id="row1">
                     <div class="content-section">
                         <h3>日期</h3>
                         <span>民國107年9月11-13日</span>
@@ -56,27 +57,27 @@
                     <div class="content-section">
                         <h3>地點</h3>
                         <span>交通部中央氣象局</span>
-                        <h4>台北市中正區公園路64號</h4>
+                        <!-- <img src="{% static "img/position.png" %}" alt=""> -->
+                        <a href="#" class="position">台北市中正區公園路64號</a>
                     </div>
-
                 </div>
-                <div class="row">
+                <div class="row" id="row2">
                     <div class="content-section">
                         <h3>本屆議題</h3>
-                        <span></span>
-                        <ul>
-                            <li>-環境遙測</li>
-                            <li>-大氣監測與分析</li>
-                            <li>-天氣模擬與預報</li>
-                            <li>-氣候監測與預報</li>
-                            <li>-氣象防災與氣候調適應用</li>
-                            <li>-氣象跨域應用與環境永續發展</li>
-                            <li>-海象測報與應用</li>
-                        </ul>
+                        <span>
+                            <ul>
+                                <li>-環境遙測</li>
+                                <li>-大氣監測與分析</li>
+                                <li>-天氣模擬與預報</li>
+                                <li>-氣候監測與預報</li>
+                                <li>-氣象防災與氣候調適應用</li>
+                                <li>-氣象跨域應用與環境永續發展</li>
+                                <li>-海象測報與應用</li>
+                            </ul>
+                        </span>
                     </div>
-
                 </div>
-                <div class="row">
+                <div class="row" id="row3">
                     <div class="content-section">
                         <h3>主辦單位</h3>
                         <span>交通部中央氣象局</span>
@@ -84,52 +85,64 @@
                     <div class="content-section">
                         <h3>協辦單位</h3>
                         <span>
-                            中華民國氣象學會
-                        </span>
-                        <span>
+                            中華民國氣象學會<br>
                             國家災害防救科技中心
                         </span>
                     </div>
                 </div>
 
                 <img src="" alt="">
-                <!-- <div class="column4">
-                    6月30日 論文短摘收件截止 前往投稿
-                    7月30日 論文全文收件截止 上傳論文
-                    9月30日 研討會報名截止 前往報名
-                    9月11日~9月13日 研討會期間 大會議程
-                </div> -->
             </div>
         </div>
+
+        <div class="context">
+            <div class="container">
+                <h2>重要時程</h2>
+                <div class="form-actions">
+                    <button id="send_pwd" type="submit" class="btn btn-primary btn-block"></button>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="footer">
             <div class="container">
-                <ul>
-                    <li>主辦單位</li>
+                <ul class="organizer">
+                    <span>主辦單位</span>
+                    <!-- <li>地址:10048臺北市中正區公園路64號 科技中心</li>
                     <li>中華民國交通部中央氣象局</li>
-                    <li>電話:(02)2349-1091 黃小姐</li>
+                    <li>電話:(02)2349-1091 黃小姐</li> -->
+                    <li>
+                        中華民國交通部中央氣象局 <br>
+                        地址：10048臺北市中正區公園路64號 科技中心<br>
+                        電話：(02)2349-1091 黃小姐
+                    </li>
                 </ul>
-                <ul>
-                    <li>首頁</li>
-                    <li>研討會資訊</li>
-                    <li>重要時程</li>
+                <ul class="firstpage">
+                    <span>首頁</span>
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">研討會資訊</a></li>
+                    <li><a href="#">重要時程</a></li>
                 </ul>
-                <ul>
-                    <li>投稿</li>
-                    <li>徵稿啟示</li>
-                    <li>投稿/投稿資訊</li>
-                    <li>全文上傳</li>
+                <ul class="submission">
+                    <span>投稿</span>
+                    <li><a href="#">徵稿啟示</a></li>
+                    <li><a href="#">投稿/投稿資訊</a></li>
+                    <li><a href="#">全文上傳</a></li>
                 </ul>
-                <ul>
-                    <li>研討會</li>
-                    <li>研討會報名</li>
-                    <li>大會議程</li>
-                    <li>歷屆研討會</li>
+                <ul class="seminar">
+                    <span>研討會</span>
+                    <li><a href="#">研討會報名</a></li>
+                    <li><a href="#">大會議程</a></li>
+                    <li><a href="#">歷屆研討會</a></li>
                 </ul>
-                <ul>
-                    <li>交通資訊</li>
-                    <li>投稿者登入</li>
+                <ul class="other">
+                    <li><span>論文搜尋</span></li>
+                    <li><span>交通位置</span></li>
+                    <li><span>投稿者登入</span></li>
                 </ul>
-                <h6>雲灣資訊有限公司 製作  ｜  中華民國交通部中央氣象局 版權所有 非經授權禁止轉載</h6>
+                <!-- <h6>雲灣資訊有限公司 製作  ｜  中華民國交通部中央氣象局 版權所有 非經授權禁止轉載</h6> -->
             </div>
         </div>
     </div>
