@@ -120,6 +120,53 @@ header .logo {
 	letter-spacing: 0.64px; /* 沒反應*/
 }
 
+
+@media (max-width:576px){
+	.d-flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	header {
+		padding: 5px 0;
+	}
+	.topheader {
+		height: 0;
+		overflow: hidden;
+		position: absolute;
+	}
+	.m-menu button {
+		width: 35px;
+		height: 35px;
+		border: none;
+		border-radius: 5px;
+		background-color:gray;
+	}
+	.m-login a {
+		padding: 5px;
+		vertical-align: middle;
+		border-radius: 5px;
+		background-color: #fff;
+		border: 1px solid #626769;
+		text-decoration: none;
+	}
+}
+@media (min-width: 576px) {
+	.m-menu {
+		height: 0;
+		overflow: hidden;
+		position: absolute;
+		border: none;
+    padding: 0;
+	}
+	.m-login {
+		height: 0;
+		overflow: hidden;
+		position: absolute;
+	}
+}
+
+
 .banner{
 	/* clear: both; */
 	width: 100% ;
@@ -199,6 +246,16 @@ p{
 	text-decoration: none;
 	letter-spacing: 0.72px;
 	font-weight: 700;
+}
+
+
+@media (max-width:375px){
+	/* .wrap{
+		width: 33px;
+	} */
+	.menu .topmenu li a{
+		background-color: yellow;
+	}
 }
 
 .content .container h2{
