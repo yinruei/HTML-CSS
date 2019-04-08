@@ -319,7 +319,7 @@ header .guid {
   text-align: center;
   font-weight: 700;
   color:rgb(0, 60, 84);
-}
+  }
   .timecourse .title:after {
   position: absolute;
   content: '';
@@ -329,7 +329,7 @@ header .guid {
   width: 53px;
   height: 2px;
   background-color: rgb(153, 51, 0);
-}
+  }
 .timecourse__list {
   position: relative;
   max-width: 500px;
@@ -366,15 +366,15 @@ header .guid {
   background-color: #003953;
   }
   .timecourse__list .section .date {
-  position: relative;
-  flex: 0 0 100px;
-  /* padding-left: 30px; */
-  max-width: 100px;
-  /* color: #4c5051; */
-  text-align: right;
-  color: rgb(77,81,82);
-  /* font-size: 26px; */
-  letter-spacing: 1.3px;;
+    position: relative;
+    flex: 0 0 100px;
+    /* padding-left: 30px; */
+    max-width: 100px;
+    /* color: #4c5051; */
+    text-align: right;
+    color: rgb(77,81,82);
+    /* font-size: 26px; */
+    letter-spacing: 1.3px;
   }
   .timecourse__list .section .date span{
   /* display: block; */
@@ -473,7 +473,7 @@ header .guid {
   }
   .timecourse__list {
     position: relative;
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 auto;
     }
     .timecourse__list:before {
@@ -507,10 +507,11 @@ header .guid {
     }
     .timecourse__list .section .date {
     position: relative;
-    flex: 0 0 100px;
+    flex: 0 0 200px;
     /* padding-left: 30px; */
-    max-width: 100px;
+    max-width: 200px;
     color: #4c5051;
+    font-size: 26px;
     /* text-align: right; */
     }
     .timecourse__list .section .date span{
@@ -522,6 +523,7 @@ header .guid {
     flex: 0 0 40%;
     margin: 0 20px 0 52px;
     color: #626769;
+    font-size: 26px;
     }
     .btn {
     display: flex;
@@ -530,7 +532,8 @@ header .guid {
     padding: 10px 10px;
     border-radius: 10px;
     text-decoration: none;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 26px;
     letter-spacing: 0.9px
     }
     .btn-primary {
