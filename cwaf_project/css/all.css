@@ -96,7 +96,9 @@ header .guid {
   display: none; }
   header .guid a {
     padding: 0 20px;
-    color: #fff; }
+    color:rgb(255,255,255);
+    font-size: 16px;
+    letter-spacing: 0.64px;; }
 
 @media (min-width: 992px) {
   header .navbar-toggler {
@@ -132,7 +134,16 @@ header .guid {
 
 @media (min-width: 992px) {
   .banner {
-    color: #fff; } }
+    color: #fff;}
+  .banner h1{
+    font-size: 48px;
+    letter-spacing: 3.6px;
+    }
+  .banner span{
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    }
+  }
 
 .menu {
   position: absolute;
@@ -199,7 +210,8 @@ header .guid {
       display: block;
       padding: 0;
       color: #366377;
-      font-size: 20px;
+      font-size: 18px;
+      letter-spacing: 0.72px;
       font-weight: 700;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
@@ -213,11 +225,24 @@ header .guid {
   }
 
 .confer-section h2 {
+  position: relative;
   margin: 0 0 30px 0;
   color: rgb(0, 60, 84);
-  /* color: #366377; */
   letter-spacing: 1.8px;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 36px;
+}
+
+  .confer-section h2:after{
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: calc(100% + 20px);
+    transform: translateX(-50%);
+    width: 53px;
+    height: 2px;
+    background-color: rgb(153, 51, 0);
+  }
 
 .confer-section .confer-info {
   height: 300px;
@@ -240,9 +265,11 @@ header .guid {
   }
   .confer-section .section div{
     font-size: 20px;
+    letter-spacing: 1.05px;
   }
   .confer-section .section span{
     font-size: 20px;
+    letter-spacing: 1.05px;
   }
 
   .confer-section .section ul {
@@ -258,7 +285,6 @@ header .guid {
     border-right: 1px solid transparent;
   }
 }
-
 
 /* @media (min-width: 992px) {
   .post{
@@ -285,17 +311,14 @@ header .guid {
     width: 320px;
   }
 
-
   .timecourse .title {
   position: relative;
   margin-bottom: 70px;
-  /* margin: 30px 0; */
-  font-size: 28px;
+  font-size: 22px;
+  letter-spacing: 1.8px;
   text-align: center;
   font-weight: 700;
-  color: #003953;
-  /* padding-bottom: 5px;
-  border-bottom: 2px solid red; */
+  color:rgb(0, 60, 84);
 }
   .timecourse .title:after {
   position: absolute;
@@ -347,8 +370,11 @@ header .guid {
   flex: 0 0 100px;
   /* padding-left: 30px; */
   max-width: 100px;
-  color: #4c5051;
+  /* color: #4c5051; */
   text-align: right;
+  color: rgb(77,81,82);
+  /* font-size: 26px; */
+  letter-spacing: 1.3px;;
   }
   .timecourse__list .section .date span{
   /* display: block; */
@@ -358,7 +384,10 @@ header .guid {
   .timecourse__list .section .name {
     flex: 1 0 40%;
     margin: 0 0 0 30px;
-    color: #626769;
+    /* color: #626769 */
+    color: rgb(77,81,82);
+    /* font-size: 26px; */
+    letter-spacing: 1.3px;;
   }
   .btn {
     display: flex;
@@ -421,12 +450,11 @@ header .guid {
       /* margin-bottom: 100px; */
       /* z-index: 10; */
     }
-  
     .timecourse .title {
     position: relative;
     margin-bottom: 70px;
     /* margin: 30px 0; */
-    font-size: 36px;
+    /* font-size: 36px; */
     text-align: center;
     font-weight: 700;
     color: #003953;
@@ -483,7 +511,7 @@ header .guid {
     /* padding-left: 30px; */
     max-width: 100px;
     color: #4c5051;
-    text-align: right;
+    /* text-align: right; */
     }
     .timecourse__list .section .date span{
     display: block;
@@ -502,7 +530,8 @@ header .guid {
     padding: 10px 10px;
     border-radius: 10px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 0.9px
     }
     .btn-primary {
     background-color: #00669a;
@@ -531,7 +560,7 @@ header .guid {
     font-weight: bold;
   }
 
-  
+
 
   .footer li {
     display: block;
@@ -587,7 +616,7 @@ header .guid {
 @media (min-width:992px){
   .footer-organizer{
     float: left;
-    margin-right: 60px;  
+    margin-right: 60px;
   }
 
   .footer-cb p{
