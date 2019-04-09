@@ -224,14 +224,14 @@ header .guid {
     z-index: 13;
   }
 
-.confer-section h2 {
-  position: relative;
-  margin: 0 0 30px 0;
-  color: rgb(0, 60, 84);
-  letter-spacing: 1.8px;
-  font-weight: 700;
-  font-size: 36px;
-}
+  .confer-section h2 {
+    position: relative;
+    margin: 0 0 30px 0;
+    color: rgb(0, 60, 84);
+    letter-spacing: 1.8px;
+    font-weight: 700;
+    font-size: 36px;
+  }
 
   .confer-section h2:after{
     position: absolute;
@@ -312,13 +312,13 @@ header .guid {
   }
 
   .timecourse .title {
-  position: relative;
-  margin-bottom: 70px;
-  font-size: 22px;
-  letter-spacing: 1.8px;
-  text-align: center;
-  font-weight: 700;
-  color:rgb(0, 60, 84);
+    position: relative;
+    margin-bottom: 70px;
+    font-size: 36px;
+    letter-spacing: 1.8px;
+    text-align: center;
+    font-weight: 700;
+    color:rgb(0, 60, 84);
   }
   .timecourse .title:after {
   position: absolute;
@@ -336,13 +336,13 @@ header .guid {
   margin: 0 auto;
   }
   .timecourse__list:before {
-  position: absolute;
-  left: 39%;
-  transform: translateX(-50%);
-  content: '';
-  width: 1px;
-  height: 100%;
-  background-color: #b3b7b9;
+    position: absolute;
+    left: 39%;
+    transform: translateX(-50%);
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #b3b7b9;
   }
   .timecourse__list .section {
     position: relative;
@@ -355,15 +355,15 @@ header .guid {
     letter-spacing: 2px;
   }
   .timecourse__list .section:before {
-  position: absolute;
-  left: 39%;
-  top: 10%;
-  transform: translateX(-50%);
-  content: '';
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #003953;
+    position: absolute;
+    left: 39%;
+    top: 10%;
+    transform: translateX(-50%);
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #003953;
   }
   .timecourse__list .section .date {
     position: relative;
@@ -400,13 +400,13 @@ header .guid {
     margin-top: 15px;
   }
   .btn-primary {
-  background-color: #00669a;
-  color: #fff;
-  /* transition: all 0.3s; */
+    background-color: #00669a;
+    color: #fff;
+    /* transition: all 0.3s; */
   }
   .btn-primary:hover {
-  background-color: #003953;
-  color: #fff;
+    background-color: #003953;
+    color: #fff;
   }
 
 
@@ -454,7 +454,8 @@ header .guid {
     position: relative;
     margin-bottom: 70px;
     /* margin: 30px 0; */
-    /* font-size: 36px; */
+    font-size: 36px;
+    letter-spacing: 1.8px;
     text-align: center;
     font-weight: 700;
     color: #003953;
@@ -462,79 +463,79 @@ header .guid {
     border-bottom: 2px solid red; */
   }
     .timecourse .title:after {
-    position: absolute;
-    content: '';
-    left: 50%;
-    top: calc(100% + 20px);
-    transform: translateX(-50%);
-    width: 53px;
-    height: 2px;
-    background-color: rgb(153, 51, 0);
+      position: absolute;
+      content: '';
+      left: 50%;
+      top: calc(100% + 20px);
+      transform: translateX(-50%);
+      width: 53px;
+      height: 2px;
+      background-color: rgb(153, 51, 0);
   }
   .timecourse__list {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
-    }
+  }
     .timecourse__list:before {
-    position: absolute;
-    left: 33%;
-    transform: translateX(-50%);
-    content: '';
-    width: 1px;
-    height: 100%;
-    background-color: #b3b7b9;
+      position: absolute;
+      left: 33%;
+      transform: translateX(-50%);
+      content: '';
+      width: 1px;
+      height: 100%;
+      background-color: #b3b7b9;
     }
     .timecourse__list .section {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 10px 0 10px 40px;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 2px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding: 10px 0 10px 40px;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
     .timecourse__list .section:before {
-    position: absolute;
-    left: 33%;
-    top: 40%;
-    transform: translateX(-50%);
-    content: '';
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #003953;
+      position: absolute;
+      left: 33%;
+      top: 40%;
+      transform: translateX(-50%);
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #003953;
     }
     .timecourse__list .section .date {
-    position: relative;
-    flex: 0 0 200px;
-    /* padding-left: 30px; */
-    max-width: 200px;
-    color: #4c5051;
-    font-size: 26px;
-    /* text-align: right; */
+      position: relative;
+      flex: 0 0 200px;
+      /* padding-left: 30px; */
+      max-width: 200px;
+      color: #4c5051;
+      font-size: 26px;
+      /* text-align: right; */
     }
     .timecourse__list .section .date span{
-    display: block;
-    /* margin-left:10px; */
-    /* padding-left:7px; */
+      display: block;
+      /* margin-left:10px; */
+      /* padding-left:7px; */
     }
     .timecourse__list .section .name {
-    flex: 0 0 40%;
-    margin: 0 20px 0 52px;
-    color: #626769;
-    font-size: 26px;
+      flex: 0 0 40%;
+      margin: 0 20px 0 52px;
+      color: #626769;
+      font-size: 26px;
     }
     .btn {
-    display: flex;
-    left: 0%;
-    margin-top: 0px;
-    padding: 10px 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    /* font-size: 18px; */
-    font-size: 26px;
-    letter-spacing: 0.9px
+      display: flex;
+      left: -5%;
+      margin-top: 0px;
+      padding: 10px 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      /* font-size: 18px; */
+      font-size: 26px;
+      letter-spacing: 0.9px
     }
     .btn-primary {
     background-color: #00669a;
@@ -546,9 +547,6 @@ header .guid {
     color: #fff;
     }
   }
-
-
-
 
   .clearfix:after {
     display: table;
@@ -563,13 +561,10 @@ header .guid {
     font-weight: bold;
   }
 
-
-
   .footer li {
     display: block;
     color:rgb(113, 118, 120);
   }
-
 
 
   .footer li a{
@@ -617,16 +612,17 @@ header .guid {
     font-size: 10px;
   }
 @media (min-width:992px){
-  .footer-organizer{
+   .footer-organizer{
     float: left;
     margin-right: 60px;
   }
 
   .footer-cb p{
     display: block;
+    margin-top: 50px;
     color: rgb(113, 118, 120);
-    text-align:justify;
-    /* text-align:center; */
-    font-size: 10px
+    /* text-align:justify; */
+    text-align:center;
+    font-size: 10px;
   }
 }
