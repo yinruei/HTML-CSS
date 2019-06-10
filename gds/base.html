@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <body>
+    <header>
+        <div class="banner">
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <div class="header text">
+                <span class="wra">經濟部水利署</span><br>
+                <span class="wra_wrp">水利規劃試驗所</span><br>
+                <span class="wra_en">Water Resources Planning Institute,Water Resources Agency,<br>Ministry of Economic Affairs.</span>
+            </div>
+
+            <div class="system">
+                濁水溪沖積扇地下水展示系統
+            </div>
+        </div>
+    </header>
+    <div class = "content-main">
+        <div class = top-main>
+            <select class="select-btn">
+                <option>查詢日期</option>
+            </select>
+        </div>
+        <hr>
+        <div class = middle-main>
+            <div>資料查詢</div>
+            <select class="select-btn">
+                <option>可用水位</option>
+            </select>
+            <div>含水層</div>
+            <select class="select-btn">
+                <option>含水層一</option>
+            </select>
+            <div>可用水量</div>
+            <select class="select-btn">
+                <option>彰化縣 彰化市</option>
+            </select>
+            <div class="select-btn">
+                <option>從地圖選擇</option>
+            </div>
+        </div>
+        <hr>
+        <div class = bottom-main>
+            <div>圖層選擇</div>
+                <div class = ckeckbox-btn>
+                <input type="checkbox" class = ckeckbox name="" value="" /> 濁水溪沖積扇邊界<br>
+                <input type="checkbox" class = ckeckbox name="" value="" /> 觀測井抽水分區<br>
+                <input type="checkbox" class = ckeckbox name="" value="" /> 地質敏感區
+                </div>
+            <div>地下水管制區</div>
+                <div class = ckeckbox-btn>
+                <input type="checkbox" class = ckeckbox name="" value="" /> 第一級<br>
+                <input type="checkbox" class = ckeckbox name="" value="" /> 第二級<br>
+                </div>
+        </div>
+    </div>
+<style>
+.content-main{
+    position: absolute;
+    width: 204px;
+    height: 768px;
+    z-index: 99
+}
+.top-main{
+    width: 204px;
+    height: 62px;
+
+}
+.middle-main{
+    width: 204px;
+    height: 308px;
+}
+.bottom-main{
+    width: 204px;
+    height: 380px;
+}
+.select-btn{
+    margin-top: 10px;
+    margin-left: 12px;
+    width: 184px;
+    height: 36px;
+}
+.ckeckbox-btn{
+    margin: 20px 0 20px 20px;
+}
+.ckeckbox{
+    margin-top:10px
+}
+</style>
+</body>
+</html>
