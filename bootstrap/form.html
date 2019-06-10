@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="controls_col" id="app1" action="" method="post">
+        <button class = "delete_btn">
+            <input type="reset" value = "X" class = "delete_input"><br>刪除內容
+        </button>
+        <div class="control-label">第一作者姓名</div>
+        <div class="control-label-en">Name of the first author</div>
+        <input type="text" name=" " id=" " placeholder="請填寫第一作者之真實姓名" class="input-block-level">
+        <div class="control-label">第一作者所屬單位</div>
+        <div class="control-label-en">Affiliation of the first author</div>
+        <select class="input-select-level">
+            <option>請選擇</option>
+            <option>文字敘述1</option>
+            <option>文字敘述2</option>
+        </select>
+        <select class="input-select-level-2">
+            <option>請選擇</option>
+            <option>文字敘述1</option>
+            <option>文字敘述2</option>
+        </select>
+        <div class="control-label">第一作者職稱</div>
+        <div class="control-label-en">Title of the first author</div>
+        <input type="text" name=" " id=" " placeholder="請填寫第一作者在工作中擔任的職位名稱" class="input-block-level">
+        <div class="control-label">全部作者姓名(請以半形;區隔)</div>
+        <div class="control-label-en">Name(s) of the author(s) (separated by ;)</div>
+        <input type="text" name=" " id=" " placeholder="請填寫真實姓名，填寫範例：王小明;陳大華" class="input-block-level">
+        <div class="control-label">論文標題</div>
+        <div class="control-label-en">Title of the paper</div>
+        <input type="text" name=" " id=" " placeholder="請填寫投稿論文之標題全名" class="input-block-level">
+        <div class="control-label">通訊Email</div>
+        <div class="control-label-en">Email</div>
+        <input type="text" name=" " id=" " placeholder="請填寫有效之電子郵件地址" class="input-block-level">
+        <div class="control-label">聯絡電話</div>
+        <div class="control-label-en">Phone number</div>
+        <input type="text" name=" " id=" " placeholder="請填寫可聯絡之市話號碼" class="input-block-level">
+        <div class="control-label">手機號碼</div>
+        <div class="control-label-en">Mobile number</div>
+        <input type="text" name=" " id=" " placeholder="填寫範例：0910-000-000" class="input-block-level">
+        <div class="control-label">論文議題勾選</div>
+        <div class="control-label-en">Symposium of your paper</div>
+
+        <div class="radio">
+            <label><input type="radio" name="optradio" checked>環境遙測<br>Environmental Remote Sensing</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">大氣監測與分析<br>Monitoring and Analysis on Atmosphere</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">天氣模擬與預報<br>Weather Simulation and Forecasting</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">氣候監測與預報<br>Monitoring and Prediction on Climate</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">氣象防災及氣候調適應用<br>Applications on Meteorological Disaster Mitigation and Climate</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">氣象跨域應用與環境永續發展<br>Cross-domain Applications of Meteorology and Environmental Sustainable</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">海象測報與應用</label>
+            <p>Observation, Predication, and Applications on Marine Meteorology</p>
+        </div>
+
+        <div class="control-label">論文發表方式</div>
+        <div class="control-label-en">Presentation mode</div>
+        <div class="radio">
+            <label><input type="radio" name="optradio" checked>口頭報告<br>Oral</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">張貼論文<br>Poster</label>
+        </div>
+
+        <button class="btn btn-block" type="submit">發送暫時密碼</button>
+    </form>
+</body> 
+
+</html>
